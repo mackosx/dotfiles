@@ -1,0 +1,23 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Mackenzie Salloum
+	email = msalloum@tveon.com
+[alias]
+        fza = "!git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o git add"
+        paste = "!f() { git format-patch -1 --stdout \"$@\" | ppaste; }; f"
+[core]
+	pager = diff-so-fancy | less --tabs=4 -R
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = blue
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse

@@ -1,0 +1,15 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+[1;9A	/Users/msalloum/.vimrc	/^inoremap [1;9A <Esc>:m .-2<CR>==gi$/;"	m	language:Vim
+[1;9A	/Users/msalloum/.vimrc	/^nnoremap [1;9A :m .-2<CR>==$/;"	m	language:Vim
+[1;9A	/Users/msalloum/.vimrc	/^vnoremap [1;9A :m '<-2<CR>gv=gv$/;"	m	language:Vim
+[1;9B	/Users/msalloum/.vimrc	/^inoremap [1;9B <Esc>:m .+1<CR>==gi$/;"	m	language:Vim
+[1;9B	/Users/msalloum/.vimrc	/^nnoremap [1;9B :m .+1<CR>==$/;"	m	language:Vim
+[1;9B	/Users/msalloum/.vimrc	/^vnoremap [1;9B :m '>+1<CR>gv=gv$/;"	m	language:Vim
+AWS	/Users/msalloum/code/expert-system/expert-system-support-2/serverless/expert_encoder_api/src/getEncodingParams/index.js	/^var AWS = require('aws-sdk');$/;"	v	language:JavaScript
+config	/Users/msalloum/code/expert-system/expert-system-support-2/serverless/expert_encoder_api/src/getEncodingParams/index.js	/^var config = require('config.json');$/;"	v	language:JavaScript
+const.body	/Users/msalloum/code/expert-system/expert-system-support-2/serverless/expert_ui_trait/src/getEncodingVariants/index.js	/^    body: JSON.stringify(data)$/;"	p	language:JavaScript
+const.body	/Users/msalloum/code/expert-system/expert-system-support-3/serverless/expert_ui_trait/src/getEncodingVariants/index.js	/^    body: JSON.stringify(data)$/;"	p	language:JavaScript
+const.statusCode	/Users/msalloum/code/expert-system/expert-system-support-2/serverless/expert_ui_trait/src/getEncodingVariants/index.js	/^    statusCode: 400,$/;"	p	language:JavaScript
+const.statusCode	/Users/msalloum/code/expert-system/expert-system-support-3/serverless/expert_ui_trait/src/getEncodingVariants/index.js	/^    statusCode: 200,$/;"	p	language:JavaScript
+mysql	/Users/msalloum/code/expert-system/expert-system-support-2/serverless/expert_encoder_api/src/getEncodingParams/index.js	/^var mysql = require('mysql');$/;"	v	language:JavaScript
+pool	/Users/msalloum/code/expert-system/expert-system-support-2/serverless/expert_encoder_api/src/getEncodingParams/index.js	/^var pool = mysql.createPool({$/;"	v	language:JavaScript

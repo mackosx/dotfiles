@@ -110,3 +110,21 @@ inoremap [1;9A <Esc>:m .-2<CR>==gi
 vnoremap [1;9B :m '>+1<CR>gv=gv
 vnoremap [1;9A :m '<-2<CR>gv=gv
 
+augroup prettier
+    autocmd!
+    autocmd BufWritePost *.{js,jsx,ts,tsx} !npm run format-single <afile>
+    autocmd BufWritePost *.{js,jsx,ts,tsx} :e
+augroup END
+
+" Syntastic config
+set signcolumn=yes
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 3
+

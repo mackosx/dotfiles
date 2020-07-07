@@ -64,6 +64,7 @@ ZSH_THEME="spaceship"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  golang
   colorize
   zsh-syntax-highlighting
   zsh-autosuggestions
@@ -157,3 +158,12 @@ alias fs='git_step'
 LSCOLORS="exfxcxdxbxegedabagacad";
 export LSCOLORS;
 alias config='/usr/bin/git --git-dir=/Users/msalloum/.cfg/ --work-tree=/Users/msalloum'
+
+export SPACESHIP_CHAR_SYMBOL="π "
+export SPACESHIP_PACKAGE_SHOW=false
+export SPACESHIP_NODE_SHOW=false
+export SPACESHIP_EXEC_TIME_SHOW=false
+
+# Go Env Vars
+export GOPATH=$HOME/code
+export GOBIN=$HOME/code/bin

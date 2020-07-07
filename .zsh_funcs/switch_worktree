@@ -2,9 +2,9 @@
 git rev-parse --git-dir > /dev/null 2>&1 || { echo "Not a git directory." && return 0 }
 
 # Print out list of worktrees (just root name of worktree)
-worktree="$(git worktree list | sed 's/.*\///' | fzf --reverse)" || return 0
+worktree="$(git worktree list | fzf --reverse)" || return 0
 
 dir=$(echo "$worktree" | awk '{ print $1}')
-root=$(git rev-parse --show-toplevel | sed 's|\(.*\)/.*|\1|')
+# root=$(git rev-parse --show-toplevel | sed 's|\(.*\)/.*|\1|')
 
-cd $root/$dir
+cd $dir
